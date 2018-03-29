@@ -237,6 +237,9 @@ RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar \
 # Begin customizations
 ###############################
 
+# Install Git
+RUN apk add git
+
 # Install some build packages globally
 RUN npm install -g grunt
 
